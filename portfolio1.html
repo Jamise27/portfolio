@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            font-family: 'Open Sans';
+            background-color: #000000;
+            color: white;
+        }
+        .text1{
+            font-size:18px;
+            line-height: 32px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+        }
+        .text1:hover{
+            color: #979797;
+        }
+        .button{
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 600;
+            width: 100px;
+            height: 40px;
+            background-color: #15B097;
+            border-radius: 6px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .button:hover{
+            background-color: white;
+            color: #000000;
+        }
+        .Nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 100px 64px 100px;
+            position: fixed;
+            top: 10%;
+            left: 0;
+            right: 0;
+            bottom: 100%;
+            z-index: 1000;
+           
+        }
+        .right1{
+            display: flex;
+            flex-direction: row;
+            column-gap: 41px ;
+            justify-content: center;
+            align-items: center;        
+        }
+        .text2{
+            font-size:68px;
+            line-height: 84px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        .text3{
+            font-size:24px;
+            line-height: 36px;
+            color: #AFAFAF;
+            display: flex;
+            justify-content: center;
+            animation: fadeInUp 1s ease-out;
+            animation-duration: 2s;
+        }
+        @keyframes fadeInUp{
+
+        }
+        .bodytext{
+            margin: 200px 310px 50px 310px;
+        }
+        .table{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+        .table1{
+            width: 600px;
+            height: 400px;
+            background-image: linear-gradient(to bottom,#000000,#371E72);
+            position: relative;
+            border-radius: 24px;
+            font-size: 52px;
+            line-height: 68px;
+            color: white;
+        }
+        .table1:hover{
+            transition: transform 0.5s ease;
+            transform: scale(1.05);
+            background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnM1d2FlZ3ZveDk2YWx4ZTdwYnhndGtnc2oydDdzdHRmbjB1bmI5ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4aEBvj5IGRSYBwn3FQ/giphy.gif");
+            background-size: cover;
+            background-repeat: no-repeat
+        }
+        .table2{
+            width: 800px;
+            height: 400px;
+            background-image: linear-gradient(to bottom,#479079,#87DBCD);
+            border-radius: 24px;
+            font-size: 52px;
+            line-height: 68px;
+            font-weight: bold;
+            position: relative;
+        }
+        .table2:hover{
+            transition: transform 0.5s ease;
+            transform: scale(1.05);
+            background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXVhZzMwOHl0eGg0MTAyaGVpYm84YmVkNnU4NXI0ZGQybXdvOWxmbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Hh9sPYeSWhAUx6NDBM/giphy.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .table3{
+            width: 1420px;
+            height: 500px;
+            background-image: linear-gradient(to bottom,#0000,#313131);
+            border-radius: 24px;
+            font-size: 52px;
+            line-height: 68px;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .table3:hover{
+            transition: transform 0.5s ease;
+            transform: scale(1.05);
+            background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzkyeWc3OGV5bHJoZjlxNG1saG5tY3V4MGZzOTdmOHl6bW9sbGRqMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u9FD8gYWCsrLWmhQUF/giphy.gif");
+            background-size: cover;
+            background-repeat: no-repeat
+        }
+        .half-colored{
+            color: #FFD85E;
+            font-weight: 600;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+        function goToNextPage() {
+            window.location.href="about.html";
+        }
+        function mouse(event){
+            document.getElementById("cursor").style.left=event.clientX;
+            document.getElementById("cursor").style.top=event.clientY;
+        }
+    </script>
+</head>
+<body onmousemove="mouse(event)">
+    <img id="cursor" src="image/flower.gif" style="position: fixed;transition: 0.1s;width: 36px; border-radius: 100%; z-index: 1000;" alt=""/>
+    <script src="script.js"></script>
+    <div class="Nav">
+        <div class="left1">
+            <img src="image/person.png" alt="" width="64px"/>
+        </div>
+        <div class="right1">
+            <div class="text1" onclick="goToNextPage()">About</div>
+            <div class="text1">Project</div>
+            <a href="file:///D:/13.%20%ED%95%9C%EA%B5%AC%EC%96%B4/NGUYEN%20THI%20THANH%20-%20CV%20UIUX.pdf" class="text1">CV</a>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=thanhthanh2718@gmail.com&su=Subject&body=Dear+Ms.+Thanh,&tf=cm" class="button">Send Mail</a>
+        </div>
+    </div>
+    <div class="bodytext">
+        <div class="text2">Hi,<br/> I'm Thanh</div>
+        <div class="text3">
+            <div style="letter-spacing: 5px;">  —  </div>
+            <div> I have experience in several mobile application projects <br/> including personal projects and projects during my <br/> studies. During my studies, I learned to pay attention to <br/> customers' problems and needs, learn about the user's <br/>target audience, and build designs in the most creative <br/> and appropriate way. Below are some projects I have <br/> booked and hope to have the opportunity to share more <br/> with you about these projects.</div>
+            </div>
+    </div>
+    <div class="table">
+        <div style="display: flex;flex-direction: row;column-gap: 20px;">
+            <div class="table1">
+                <img src="image/Image1.png" alt="" style="width: 380px;position: absolute;top: -3%;left: 32%;"/>
+                <img src="image/logo1.png" alt="" style="width: 50px;position: absolute;top: 8%;right: 85%;"/>
+                <div style="position: absolute;top: 80%;left:8%;"><span class="half-colored">Night</span>ie</div>
+                </div>
+                <div class="table2">
+                <img src="image/Image2.png" alt="" style="width: 540px;position: absolute;top: 1%;left: 32%;"/>
+                <img src="image/logo2.png" alt="" style="width: 150px;position: absolute;top: 8%;right: 74%;"/>
+                <div style="position: absolute;top: 80%;left:8%;color: transparent;
+                background: linear-gradient(to bottom, #479079, #167D7F);background-clip: text;">Trippal</div>
+            </div>
+        </div>
+        <div class="table3">
+            <img src="image/logoo.png" alt="" style="width: 664px;position: absolute;top: -3%;right: 2%;"/>
+            <img src="image/image3.png" alt="" style="width: 700px;position: absolute;top: -3%;left: 50%;"/>
+            <img src="image/logo3.png" alt="" style="width: 800px;position: absolute;top: 40%;right: 39%;"/>
+            <img src="image/orange half.png" alt="" style="width: 300px;position: absolute;top: 47%;right: 79%;"/>  
+        </div>
+    </div>
+</body>
+</html>
